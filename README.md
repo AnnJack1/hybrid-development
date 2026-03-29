@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
 # Welcome to your Expo app 👋
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
@@ -35,12 +39,15 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+<<<<<<< HEAD
 ### Other setup steps
 
 - To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
 - If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
 - Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
 
+=======
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
@@ -54,3 +61,10 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<<<<<<< HEAD
+=======
+=======
+# hybrid-development
+hybrid development course work
+>>>>>>> 97277019c5e678b3418fef787b6565af9b6f8580
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
