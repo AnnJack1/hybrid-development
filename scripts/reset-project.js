@@ -2,7 +2,15 @@
 
 /**
  * This script is used to reset the project to a blank state.
+<<<<<<< HEAD
  * It deletes or moves the /src and /scripts directories to /example based on user input and creates a new /src/app directory with an index.tsx and _layout.tsx file.
+=======
+<<<<<<< HEAD
+ * It deletes or moves the /src and /scripts directories to /example based on user input and creates a new /src/app directory with an index.tsx and _layout.tsx file.
+=======
+ * It deletes or moves the /app, /components, /hooks, /scripts, and /constants directories to /app-example based on user input and creates a new /app directory with an index.tsx and _layout.tsx file.
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
  * You can remove the `reset-project` script from package.json and safely delete this file after running it.
  */
 
@@ -11,6 +19,10 @@ const path = require("path");
 const readline = require("readline");
 
 const root = process.cwd();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
 const oldDirs = ["src", "scripts"];
 const exampleDir = "example";
 const newAppDir = "src/app";
@@ -33,6 +45,31 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
+<<<<<<< HEAD
+=======
+=======
+const oldDirs = ["app", "components", "hooks", "constants", "scripts"];
+const exampleDir = "app-example";
+const newAppDir = "app";
+const exampleDirPath = path.join(root, exampleDir);
+
+const indexContent = `import { Text, View } from "react-native";
+
+export default function Index() {
+  return (
+    <View
+      style={{
+        flex: 1,
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Text>Edit app/index.tsx to edit this screen.</Text>
+    </View>
+  );
+}
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
 `;
 
 const layoutContent = `import { Stack } from "expo-router";
@@ -72,19 +109,44 @@ const moveDirectories = async (userInput) => {
       }
     }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
     // Create new /src/app directory
     const newAppDirPath = path.join(root, newAppDir);
     await fs.promises.mkdir(newAppDirPath, { recursive: true });
     console.log("\n📁 New /src/app directory created.");
+<<<<<<< HEAD
+=======
+=======
+    // Create new /app directory
+    const newAppDirPath = path.join(root, newAppDir);
+    await fs.promises.mkdir(newAppDirPath, { recursive: true });
+    console.log("\n📁 New /app directory created.");
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
 
     // Create index.tsx
     const indexPath = path.join(newAppDirPath, "index.tsx");
     await fs.promises.writeFile(indexPath, indexContent);
+<<<<<<< HEAD
     console.log("📄 src/app/index.tsx created.");
+=======
+<<<<<<< HEAD
+    console.log("📄 src/app/index.tsx created.");
+=======
+    console.log("📄 app/index.tsx created.");
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
 
     // Create _layout.tsx
     const layoutPath = path.join(newAppDirPath, "_layout.tsx");
     await fs.promises.writeFile(layoutPath, layoutContent);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
     console.log("📄 src/app/_layout.tsx created.");
 
     console.log("\n✅ Project reset complete. Next steps:");
@@ -92,6 +154,18 @@ const moveDirectories = async (userInput) => {
       `1. Run \`npx expo start\` to start a development server.\n2. Edit src/app/index.tsx to edit the main screen.\n3. Put all your application code in /src, only screens and layout files should be in /src/app.${
         userInput === "y"
           ? `\n4. Delete the /${exampleDir} directory when you're done referencing it.`
+<<<<<<< HEAD
+=======
+=======
+    console.log("📄 app/_layout.tsx created.");
+
+    console.log("\n✅ Project reset complete. Next steps:");
+    console.log(
+      `1. Run \`npx expo start\` to start a development server.\n2. Edit app/index.tsx to edit the main screen.${
+        userInput === "y"
+          ? `\n3. Delete the /${exampleDir} directory when you're done referencing it.`
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
           : ""
       }`
     );
@@ -101,7 +175,15 @@ const moveDirectories = async (userInput) => {
 };
 
 rl.question(
+<<<<<<< HEAD
   "Do you want to move existing files to /example instead of deleting them? (Y/n): ",
+=======
+<<<<<<< HEAD
+  "Do you want to move existing files to /example instead of deleting them? (Y/n): ",
+=======
+  "Do you want to move existing files to /app-example instead of deleting them? (Y/n): ",
+>>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
+>>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
   (answer) => {
     const userInput = answer.trim().toLowerCase() || "y";
     if (userInput === "y" || userInput === "n") {
