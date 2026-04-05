@@ -1,7 +1,18 @@
-<<<<<<< HEAD
-import { Tabs } from 'expo-router';
+import React from 'react';
+import { Platform } from 'react-native';
+import { Tabs, Drawer } from 'expo-router';
 
 export default function Layout() {
+  if (Platform.OS === 'android') {
+    return (
+      <Drawer>
+        <Drawer.Screen name="planets" options={{ title: 'Planets' }} />
+        <Drawer.Screen name="films" options={{ title: 'Films' }} />
+        <Drawer.Screen name="spaceships" options={{ title: 'Spaceships' }} />
+      </Drawer>
+    );
+  }
+
   return (
     <Tabs>
       <Tabs.Screen name="planets" options={{ title: 'Planets' }} />
@@ -10,21 +21,4 @@ export default function Layout() {
     </Tabs>
   );
 }
-=======
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import React from 'react';
-import { useColorScheme } from 'react-native';
 
-import { AnimatedSplashOverlay } from '@/components/animated-icon';
-import AppTabs from '@/components/app-tabs';
-
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <AnimatedSplashOverlay />
-      <AppTabs />
-    </ThemeProvider>
-  );
-}
->>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c

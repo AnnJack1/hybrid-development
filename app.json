@@ -1,6 +1,5 @@
 {
   "expo": {
-<<<<<<< HEAD
     "name": "starwars-app",
     "slug": "starwars-app",
     "version": "1.0.0",
@@ -9,46 +8,14 @@
     "scheme": "starwarsapp",
     "userInterfaceStyle": "automatic",
     "ios": {
-      "icon": "./assets/expo.icon"
-=======
-<<<<<<< HEAD
-    "name": "flexbox-simple",
-    "slug": "flexbox-simple",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "flexboxsimple",
-    "userInterfaceStyle": "automatic",
-    "ios": {
-      "icon": "./assets/expo.icon"
-=======
-    "name": "my-project",
-    "slug": "my-project",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
-    "scheme": "myproject",
-    "userInterfaceStyle": "automatic",
-    "newArchEnabled": true,
-    "ios": {
       "supportsTablet": true
->>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
->>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-      "edgeToEdgeEnabled": true,
->>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
->>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
       "predictiveBackGestureEnabled": false
     },
     "web": {
@@ -60,32 +27,15 @@
       [
         "expo-splash-screen",
         {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
-          "backgroundColor": "#208AEF",
-          "android": {
-            "image": "./assets/images/splash-icon.png",
-            "imageWidth": 76
-<<<<<<< HEAD
-=======
-=======
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
-          "dark": {
-            "backgroundColor": "#000000"
->>>>>>> 6df17c19a6e3e2d620ef8d5f5db3e66ea274407f
->>>>>>> 85d2cc6aa6e4e7575d86285ae56563d82b51719c
-          }
+          "backgroundColor": "#ffffff"
         }
       ]
     ],
     "experiments": {
-      "typedRoutes": true,
-      "reactCompiler": true
+      "typedRoutes": true
     }
   }
 }

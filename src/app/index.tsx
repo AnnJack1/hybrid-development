@@ -3,9 +3,7 @@ import { Platform, StatusBar, StyleSheet, Text, View } from 'react-native';
 export default function HomeScreen() {
   return (
     <View style={styles.container}>
-      
       <View style={styles.row}>
-        
         <View style={styles.column}>
           <View style={styles.box}><Text>#1</Text></View>
           <View style={styles.box}><Text>#2</Text></View>
@@ -23,9 +21,7 @@ export default function HomeScreen() {
           <View style={styles.box}><Text>#11</Text></View>
           <View style={styles.box}><Text>#12</Text></View>
         </View>
-
       </View>
-
     </View>
   );
 }
@@ -36,7 +32,7 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     ...Platform.select({
       ios: { paddingTop: 20 },
-      android: { paddingTop: StatusBar.currentHeight }
+      android: { paddingTop: StatusBar.currentHeight },
     }),
   },
 
